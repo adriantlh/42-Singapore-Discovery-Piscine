@@ -1,0 +1,4 @@
+
+find . -type f -name "*.py" -exec chmod a+rwx {} \;
+
+#!/usr/bin/env python3

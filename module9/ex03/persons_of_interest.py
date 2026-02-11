@@ -12,3 +12,16 @@ women_scientists = {
 }
 
 famous_births(women_scientists)
+
+# --- Improvement Recommendations ---
+# 1. Remove the space before parenthesis in print().
+# 2. Typos in the data:
+#    - "Cecila Payne" should be "Cecilia Payne" (missing 'i')
+#    - "Lisa Meitner" should be "Lise Meitner" (her name was Lise, not Lisa)
+# 3. Use .items() to iterate over both key and value, which is cleaner:
+#    def famous_births(x):
+#        for key, info in x.items():
+#            print(f"{info['name']} is a great scientist born in {info['date_of_birth']}.")
+# 4. The loop variable "i" iterates over dictionary keys. Using a descriptive name
+#    like "key" or "scientist" improves readability.
+# 5. Consider using a more descriptive parameter name: "scientists" instead of "x".

@@ -14,12 +14,10 @@ if len(sys.argv) == 1:
     print ("none")
 else:
     while i < len(sys.argv):
-        if len(sys.argv[i]) < 8:
+        if len(sys.argv[i]) <= 8:
             enlarge(sys.argv[i])
-        elif len(sys.argv[i]) > 8:
+        else:
             shrink(sys.argv[i])
-        else: 
-            print (sys.argv[i])
         i+=1
 
 # --- Improvement Recommendations ---

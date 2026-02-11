@@ -26,3 +26,15 @@ else:
             j+=1
         print ("")
         print (f"Count of z: {len(count)}")
+
+# --- Improvement Recommendations ---
+# 1. Remove the space before parenthesis in print().
+# 2. The re (regex) module is overkill for counting a single character. Use str.count():
+#    combined = "".join(sys.argv[1:])
+#    count = combined.count("z")
+#    This removes the need for the re import entirely.
+# 3. The while loop to print each "z" individually (lines 24-26) can be replaced with:
+#    print(searchterm * len(count))
+# 4. Extra space on line 21: "if len(count)  == 0" — use single space.
+# 5. Add a space after the comma on line 18: re.findall(searchterm, string)
+# 6. Add spaces around += on line 26: j += 1

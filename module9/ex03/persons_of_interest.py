@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 
 def famous_births(x):
+    x = sorted(x.items(), key=lambda item: item[1]["date_of_birth"])
+    x = dict(x)
     for i in x:
         print(f"{x[i]['name']} is a great scientist born in {x[i]['date_of_birth']}.")
 

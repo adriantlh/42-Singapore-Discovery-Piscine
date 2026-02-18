@@ -11,7 +11,7 @@ def enlarge(x):
 i = 1
 
 if len(sys.argv) == 1:
-    print ("none")
+    print("none")
 else:
     while i < len(sys.argv):
         if len(sys.argv[i]) <= 8:
